@@ -1,0 +1,34 @@
+{
+  "name": "ts-node-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsnd --ignore-watch dist --notify src/index.ts",
+    "start:tsnode": "ts-node -r tsconfig-paths/register dist/index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^14.6.0",
+    "@typescript-eslint/eslint-plugin": "^3.10.0",
+    "@typescript-eslint/parser": "^3.10.0",
+    "eslint": "^7.7.0",
+    "typescript": "^4.0.2"
+  },
+  "dependencies": {
+    "@types/request": "^2.48.5",
+    "@types/request-promise-native": "^1.0.17",
+    "@types/winston": "^2.4.4",
+    "axios": "^0.20.0",
+    "cheerio": "^1.0.0-rc.3",
+    "request": "^2.88.2",
+    "request-promise-native": "^1.0.9",
+    "ts-node": "^9.0.0",
+    "ts-node-dev": "^1.0.0-pre.60",
+    "tsconfig-paths": "^3.9.0",
+    "twitch": "^4.2.1",
+    "twitch-auth": "^4.2.1",
+    "winston": "^3.3.3"
+  }
+}
